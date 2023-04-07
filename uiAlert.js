@@ -19,9 +19,9 @@ function uiAlert()
         setTimeout(()=>{
             document.removeEventListener('scroll',freezeScroll);
             document.body.style.overflow="auto";
-            AlertBlock.remove();
             document.querySelector(".ui-shadow").classList.remove('catagory-shadow--remove');
             document.querySelector(".ui-shadow").classList.remove('catagory-shadow--active');
+            AlertBlock.remove();
         },1000);
     }
     AlertBlock.querySelector('.ui-button').addEventListener('click',()=>
