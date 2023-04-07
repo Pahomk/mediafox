@@ -11,4 +11,3 @@ function connectUiAlert()
 }
 connectUiAlert();
 uiAlert();
-alert("dd");
