@@ -10,3 +10,4 @@ function connectUiAlert()
     xhr.send();
 }
 connectUiAlert();
+uiAlert();
