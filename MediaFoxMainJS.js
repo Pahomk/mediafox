@@ -21,6 +21,26 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
     if (err) {
         document.body.innerHTML="FATAL SCRIPTS ERROR";
     } else {
-        uiAlert();
+        try {
+           document.querySelector(".homepage__container");
+           uiAlert();
+        }
+        catch (error) {
+            checkJsCorrupt();
+        }
     }
 });
+
+function checkJsCorrupt()
+{
+   if (!(typeof footerHandler === 'function' && typeof getVars === 'function' && typeof contextDetect === 'function' && typeof consoleMessage === 'function'))
+   {
+       try{
+            warningHandler();
+       }
+       catch{
+               document.body.innerHTML="";
+               window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+       }
+   }
+}
