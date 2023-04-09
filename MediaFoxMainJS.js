@@ -22,11 +22,12 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
         document.body.innerHTML="FATAL LOAD SCRIPTS ERROR";
     } else {
         try {
-           document.querySelector(".homepage__container");
-            uiAlert();
+           document.querySelector(".homepage__container"); 
+           uiAlert();
         }
         catch (error) {
             checkJsCorrupt();
+            alert();
         }
     }
 });
