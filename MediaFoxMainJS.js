@@ -46,4 +46,5 @@ function checkJsCorrupt()
    else
    {
        document.body.innerHTML="HTML CLASSES IS CORRUPTED";
+   }
 }
