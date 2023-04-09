@@ -23,7 +23,9 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
     } else {
         try {
            document.querySelector(".homepage__container");
-           uiAlert();
+           window.addEventListener("load", function () {
+            uiAlert();
+           });
         }
         catch (error) {
             checkJsCorrupt();
