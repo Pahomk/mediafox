@@ -18,21 +18,21 @@ function connectLink(link, callback) {
 
 //uiAlert
 connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js", function(err) {
-    if (err) {
+   /* if (err) {
         document.body.innerHTML="FATAL LOAD SCRIPTS ERROR";
     } else {
         try {
            document.querySelector(".homepage__container");
             uiAlert();
-            alert();
         }
         catch (error) {
             checkJsCorrupt();
         }
-    }
+    }*/
+    uiAlert();
 });
 
-function checkJsCorrupt()
+/*function checkJsCorrupt()
 {
    if (!(typeof footerHandler === 'function' && typeof getVars === 'function' && typeof contextDetect === 'function' && typeof consoleMessage === 'function'))
    {
@@ -48,4 +48,4 @@ function checkJsCorrupt()
    {
        document.body.innerHTML="HTML CLASSES IS CORRUPTED";
    }
-}
+}*/
