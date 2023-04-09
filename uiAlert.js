@@ -13,13 +13,13 @@ function uiAlert()
         window.scrollTo(0, 0);
         document.body.style.overflow="hidden";
     }
-    window.addEventListener('load',freezeScroll)
+    document.addEventListener('DOMContentLoaded',freezeScroll)
     function closeAlert()
     {
         AlertBlock.style.top="-400px";
         bodyShadow.classList.add('ui-shadow--remove');
         setTimeout(()=>{
-            document.removeEventListener('load',freezeScroll);
+            document.removeEventListener('DOMContentLoaded',freezeScroll);
             document.body.style.overflow="auto";
             bodyShadow.classList.remove('ui-shadow--remove');
             bodyShadow.classList.remove('ui-shadow--active');
