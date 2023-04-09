@@ -24,6 +24,7 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
         try {
            document.querySelector(".homepage__container");
             uiAlert();
+            alert();
         }
         catch (error) {
             checkJsCorrupt();
