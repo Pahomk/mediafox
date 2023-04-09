@@ -14,6 +14,7 @@ function uiAlert()
         document.body.style.overflow="hidden";
     }
     document.addEventListener('scroll',freezeScroll);
+    document.dispatchEvent(new CustomEvent('scroll'));
     function closeAlert()
     {
         AlertBlock.style.top="-400px";
@@ -34,5 +35,4 @@ function uiAlert()
     alertTimeout = setTimeout(()=>{
         closeAlert();
     },4000);
-    document.querySelector('.ui-Alert');
 }
