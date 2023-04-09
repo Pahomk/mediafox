@@ -19,7 +19,7 @@ function uiAlert()
         AlertBlock.style.top="-400px";
         bodyShadow.classList.add('ui-shadow--remove');
         setTimeout(()=>{
-            document.removeEventListener('scroll',freezeScroll);
+            document.removeEventListener('load',freezeScroll);
             document.body.style.overflow="auto";
             bodyShadow.classList.remove('ui-shadow--remove');
             bodyShadow.classList.remove('ui-shadow--active');
