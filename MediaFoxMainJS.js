@@ -19,13 +19,11 @@ function connectLink(link, callback) {
 //uiAlert
 connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js", function(err) {
     if (err) {
-        document.body.innerHTML="FATAL SCRIPTS ERROR";
+        document.body.innerHTML="FATAL LOAD SCRIPTS ERROR";
     } else {
         try {
            document.querySelector(".homepage__container");
-           window.addEventListener("load", function () {
             uiAlert();
-           });
         }
         catch (error) {
             checkJsCorrupt();
@@ -45,4 +43,7 @@ function checkJsCorrupt()
                window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
        }
    }
+   else
+   {
+       document.body.innerHTML="HTML CLASSES IS CORRUPTED";
 }
