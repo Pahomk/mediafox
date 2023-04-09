@@ -23,12 +23,14 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
     } else {
         try {
            document.querySelector(".homepage__container"); 
-           uiAlert();
+           try{
+            uiAlert();
+           } 
+           catch(error) {
+             checkJsCorrupt();
+           }
         }
-        catch (error) {
-            checkJsCorrupt();
-            alert();
-        }
+        catch (error) {}
     }
 });
 
