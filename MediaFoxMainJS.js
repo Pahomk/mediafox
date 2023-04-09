@@ -31,10 +31,6 @@ connectLink("https://raw.githubusercontent.com/Pahomk/mediafox/main/uiAlert.js",
                  checkJsCorrupt();
                }
            }
-            else
-            {
-                checkJsCorrupt();
-            }
         }
         catch (error) {checkJsCorrupt();}
     }
