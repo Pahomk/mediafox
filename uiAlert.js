@@ -30,7 +30,7 @@ function uiAlert()
             document.dispatchEvent(new CustomEvent('scroll'));
             function closeAlert()
             {
-                AlertBlock.style.top="-400px";
+                AlertBlock.style.top="-900px";
                 bodyShadow.classList.add('ui-shadow--remove');
                 setTimeout(()=>{
                     for (let el of Array.from(document.querySelector('.ui-body-shadow').children))
@@ -41,7 +41,7 @@ function uiAlert()
                     bodyShadow.classList.remove('ui-shadow--remove');
                     bodyShadow.classList.remove('ui-shadow--active');
                     AlertBlock.remove();
-                },1000);
+                },2000);
             }
             AlertBlock.querySelector('.ui-button').addEventListener('click',()=>
             {
