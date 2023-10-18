@@ -41,7 +41,7 @@ function uiAlert()
                     bodyShadow.classList.remove('ui-shadow--remove');
                     bodyShadow.classList.remove('ui-shadow--active');
                     AlertBlock.remove();
-                },2000);
+                },5000);
             }
             AlertBlock.querySelector('.ui-button').addEventListener('click',()=>
             {
@@ -50,5 +50,5 @@ function uiAlert()
             });
             alertTimeout = setTimeout(()=>{
                 closeAlert();
-            },4000);  
+            },30000);  
 }
